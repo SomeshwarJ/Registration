@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+
+}
+@model Login_mvc_.Models.Account
+<div class="w3l-signinform">
+    <div class="wrapper">
+        <div class="w3l-form-info">
+            <div class="w3_info">
+                <h1>User Details</h1>
+                <form action="Verify" method="post">
+                    <div class="input-group">
+                        <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <input type="text" value="@Model.Name" name="Name" required="">
+                    </div>
+                    <div class="input-group">
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <input type="text" value="@Model.Email" name="Email" required="">
+                    </div>
+                    <div class="input-group two-groop">
+                        <span><i class="fa fa-key" aria-hidden="true"></i></span>
+                        <input type="text" value="@Model.Phone" name="Phone" required="">
+                    </div>
+                    <a href="https://localhost:44361/Account/Login" class="btn btn-primary">Back to Home</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

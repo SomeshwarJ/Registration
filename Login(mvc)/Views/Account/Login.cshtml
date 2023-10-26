@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<div class="w3l-signinform">
+    <!-- container -->
+    <div class="wrapper">
+        <!-- main content -->
+        <div class="w3l-form-info">
+            <div class="w3_info">
+                <h1>Register Here</h1>
+                <!-- <p class="sub-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> -->
+                
+                <form action="Verify" method="post">
+                    <div class="input-group">
+                        <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <input type="text" placeholder="Username" name="Name" required="">
+                    </div>
+                    <div class="input-group">
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <input type="text" placeholder="Email" name="Email" required="">
+                    </div>
+                    <div class="input-group two-groop">
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <input type="text" placeholder="Phone No" name="Phone" required="">
+                    </div>
+                    <button class="btn btn-primary btn-block" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!-- //main content -->
+    </div>
+</div>
